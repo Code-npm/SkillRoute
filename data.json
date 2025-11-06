@@ -1,0 +1,113 @@
+{
+  "careers": [
+    "Software Developer",
+    "Data Analyst",
+    "AI Engineer",
+    "Cybersecurity Expert",
+    "UI/UX Designer",
+    "Graphic Designer",
+    "Doctor",
+    "Psychologist",
+    "Entrepreneur",
+    "Lawyer",
+    "Teacher",
+    "Digital Marketer"
+  ],
+
+  "questions": [
+    {
+      "id": 1,
+      "type": "interest",
+      "question": "Which type of work excites you the most?",
+      "options": [
+        { "text": "Building and coding software", "score": { "Software Developer": 3, "AI Engineer": 2 } },
+        { "text": "Analyzing numbers and patterns", "score": { "Data Analyst": 3 } },
+        { "text": "Designing creative visuals or layouts", "score": { "Graphic Designer": 3, "UI/UX Designer": 2 } },
+        { "text": "Helping people solve mental or emotional issues", "score": { "Psychologist": 3 } },
+        { "text": "Starting and managing businesses", "score": { "Entrepreneur": 3 } },
+        { "text": "Protecting systems from cyber attacks", "score": { "Cybersecurity Expert": 3 } }
+      ]
+    },
+
+    {
+      "id": 2,
+      "type": "personality",
+      "question": "How do you usually make decisions?",
+      "options": [
+        { "text": "Based on logic and facts", "score": { "Software Developer": 2, "Data Analyst": 2, "Lawyer": 2, "AI Engineer": 1 } },
+        { "text": "Based on emotions and how it affects people", "score": { "Psychologist": 3, "Teacher": 1, "Doctor": 1 } },
+        { "text": "A mix of both logic and empathy", "score": { "Entrepreneur": 2, "Digital Marketer": 2 } }
+      ]
+    },
+
+    {
+      "id": 3,
+      "type": "workstyle",
+      "question": "Do you prefer working...",
+      "options": [
+        { "text": "Alone and focused", "score": { "Software Developer": 2, "Data Analyst": 2, "AI Engineer": 2 } },
+        { "text": "With a team and collaboration", "score": { "Entrepreneur": 2, "Teacher": 2, "Doctor": 2, "Digital Marketer": 1 } },
+        { "text": "Mix of independent + team work", "score": { "UI/UX Designer": 2, "Cybersecurity Expert": 1 } }
+      ]
+    },
+
+    {
+      "id": 4,
+      "type": "skill",
+      "question": "Which skill describes you best?",
+      "options": [
+        { "text": "Logical and problem-solving", "score": { "Software Developer": 3, "AI Engineer": 2, "Cybersecurity Expert": 2 } },
+        { "text": "Creative thinker and visual imagination", "score": { "Graphic Designer": 3, "UI/UX Designer": 3, "Digital Marketer": 1 } },
+        { "text": "Good at explaining and teaching concepts", "score": { "Teacher": 3, "Psychologist": 1 } },
+        { "text": "Strong communication and argument skills", "score": { "Lawyer": 3, "Entrepreneur": 1 } }
+      ]
+    },
+
+    {
+      "id": 5,
+      "type": "mbti",
+      "question": "Are you more introverted or extroverted?",
+      "options": [
+        { "text": "Introverted", "score": { "Software Developer": 2, "Data Analyst": 2, "AI Engineer": 2, "Graphic Designer": 1 } },
+        { "text": "Extroverted", "score": { "Entrepreneur": 3, "Teacher": 2, "Doctor": 1, "Digital Marketer": 2 } }
+      ]
+    },
+
+    {
+      "id": 6,
+      "type": "interest",
+      "question": "Which school subject did you enjoy the most?",
+      "options": [
+        { "text": "Math / Computer Science", "score": { "Software Developer": 3, "AI Engineer": 3, "Data Analyst": 2 } },
+        { "text": "Biology / Chemistry", "score": { "Doctor": 3, "Psychologist": 1 } },
+        { "text": "Art / Design", "score": { "Graphic Designer": 3, "UI/UX Designer": 3 } },
+        { "text": "Business / Economics", "score": { "Entrepreneur": 3, "Digital Marketer": 1 } },
+        { "text": "Law / History", "score": { "Lawyer": 3 } }
+      ]
+    },
+
+    {
+      "id": 7,
+      "type": "future",
+      "question": "What matters most in your future career?",
+      "options": [
+        { "text": "High salary & growth", "score": { "AI Engineer": 3, "Data Analyst": 2, "Cybersecurity Expert": 2 } },
+        { "text": "Helping and impacting people", "score": { "Doctor": 3, "Psychologist": 3, "Teacher": 2 } },
+        { "text": "Freedom & creativity", "score": { "Entrepreneur": 2, "Graphic Designer": 2, "Digital Marketer": 2 } },
+        { "text": "Stability and respect", "score": { "Lawyer": 3, "Doctor": 1 } }
+      ]
+    },
+
+    {
+      "id": 8,
+      "type": "personality",
+      "question": "How do you handle problems?",
+      "options": [
+        { "text": "Break them down logically", "score": { "Software Developer": 3, "Data Analyst": 2 } },
+        { "text": "Talk with others to understand deeper", "score": { "Psychologist": 3, "Teacher": 2 } },
+        { "text": "Think creatively and brainstorm ideas", "score": { "Graphic Designer": 2, "Digital Marketer": 2 } }
+      ]
+    }
+    
+  ]
+}
