@@ -163,7 +163,7 @@ article a{
   .card {
     flex: 0 0 calc(33.333% - 20px);
     margin: 0 10px;
-    background: rgba(255, 255, 255, 0.1);
+    background: #11525275;
     border-radius: 15px;
     padding: 20px;
     text-align: center;

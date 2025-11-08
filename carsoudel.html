@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Career Explorer Carousel</title>
+<style>
+  body {
+    background: radial-gradient(circle, #0bf5ed, #013038);
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .carousel-container {
+    position: relative;
+    width: 90%;
+    max-width: 1000px;
+    overflow: hidden;
+  }
+
+  .carousel {
+    display: flex;
+    transition: transform 0.6s ease-in-out;
+  }
+
+  .card {
+    flex: 0 0 calc(33.333% - 20px);
+    margin: 0 10px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    backdrop-filter: blur(6px);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+  }
+
+  .card h3 {
+    color: #0bf5ed;
+    margin-bottom: 10px;
+  }
+
+  .nav-btn {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    background: rgba(11, 245, 237, 0.2);
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    transition: background 0.3s;
+  }
+
+  .nav-btn:hover {
+    background: rgba(11, 245, 237, 0.5);
+  }
+
+  #prevBtn {
+    left: -10px;
+  }
+  #nextBtn {
+    right: -10px;
+  }
+
+  @media (max-width: 768px) {
+    .card {
+      flex: 0 0 80%;
+    }
+  }
+</style>
+</head>
+<body>
+
+<h2>🌐 Explore Career Paths</h2>
+
+<div class="carousel-container">
+  <button class="nav-btn" id="prevBtn">❮</button>
+  <div class="carousel" id="carousel">
+    <div class="card">
+      <h3>💻 Software Developer</h3>
+      <p>Design, build, and optimize apps and systems using code.</p>
+    </div>
+    <div class="card">
+      <h3>📊 Data Analyst</h3>
+      <p>Interpret trends and turn raw data into meaningful insights.</p>
+    </div>
+    <div class="card">
+      <h3>🤖 AI Engineer</h3>
+      <p>Develop and train intelligent models that automate decisions.</p>
+    </div>
+    <div class="card">
+      <h3>🎨 UI/UX Designer</h3>
+      <p>Create intuitive and aesthetic digital experiences for users.</p>
+    </div>
+    <div class="card">
+      <h3>🛡️ Cybersecurity Expert</h3>
+      <p>Protect systems from cyber threats and ensure digital safety.</p>
+    </div>
+    <div class="card">
+      <h3>💼 Entrepreneur</h3>
+      <p>Build, manage, and scale your own innovative ventures.</p>
+    </div>
+  </div>
+  <button class="nav-btn" id="nextBtn">❯</button>
+</div>
+
+<script>
+  const carousel = document.getElementById('carousel');
+  const nextBtn = document.getElementById('nextBtn');
+  const prevBtn = document.getElementById('prevBtn');
+  let currentIndex = 0;
+
+  const cards = document.querySelectorAll('.card');
+  const visibleCards = 3;
+
+  function updateCarousel() {
+    const cardWidth = cards[0].offsetWidth + 20; // width + margin
+    carousel.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+  }
+
+  nextBtn.addEventListener('click', () => {
+    if (currentIndex < cards.length - visibleCards) {
+      currentIndex++;
+      updateCarousel();
+    }
+  });
+
+  prevBtn.addEventListener('click', () => {
+    if (currentIndex > 0) {
+      currentIndex--;
+      updateCarousel();
+    }
+  });
+
+  window.addEventListener('resize', updateCarousel);
+</script>
+
+</body>
+</html>
