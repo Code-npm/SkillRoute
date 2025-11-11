@@ -1,3 +1,10 @@
+ :root {
+    --primary: #213f3e;
+    --primary-light: #3b5f5d;
+    --primary-dark: #162b2b;
+    --accent: #57b5b0;
+    --text-light: #e6f2f1;
+  }
 *{
     margin: 0;
     padding: 0;
@@ -7,6 +14,9 @@ body{
     width: 100%;
     height: 100%;
       background-color: #060E17;
+      align-items: center;
+    justify-content: center;
+    min-height: 100vh;
 }
 main{
     position: relative;
@@ -133,7 +143,81 @@ article a{
     height: 40%;
     margin: 1rem 10rem;
 
+
 }
+  .contact-card {
+    background: var(--primary);
+    border-radius: 20px;
+    padding: 40px 30px;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.3);
+    max-width: 400px;
+    width: 90%;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .contact-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 30px rgba(87, 181, 176, 0.3);
+  }
+
+  .contact-card h2 {
+    margin-bottom: 10px;
+    color: var(--accent);
+  }
+
+  .contact-card p {
+    color: #cde2e0;
+    font-size: 0.95rem;
+    margin-bottom: 25px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  input, textarea {
+    padding: 12px 15px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    font-family: inherit;
+    background: var(--primary-light);
+    color: var(--text-light);
+  }
+
+  input::placeholder, textarea::placeholder {
+    color: #a6c3c2;
+  }
+
+  textarea {
+    resize: none;
+    height: 90px;
+  }
+
+  button {
+    background: var(--accent);
+    color: var(--primary-dark);
+    font-weight: 600;
+    border: none;
+    border-radius: 20px;
+    padding: 12px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+
+  button:hover {
+    background: #80d3cf;
+  }
+
+  .success-message {
+    display: none;
+    margin-top: 15px;
+    color: #9df7f2;
+    font-weight: 500;
+  }
 .carousel{
     display: flex;
 }
@@ -230,3 +314,30 @@ article a{
     text-align: center;
   }
 
+.section{
+  display: flex;
+}
+.card{
+  background-color: #19625F;
+  border-radius: 2rem;
+  transition: transform 2s ease-in-out;
+
+}
+.card h2{
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 2rem 1rem;
+  background-color: #204d4d;
+  
+}
+.card p{
+  font-family: 'Courier New', Courier, monospace;
+  padding: 20px;
+}
+.card:hover{
+transform: scale(1.01);
+box-shadow: 5px 5px 20px #0bf5ed;
+}
+.card h2:hover{
+transform: scale(1.01);
+box-shadow: 5px 5px 20px #0bf5ed;
+}
